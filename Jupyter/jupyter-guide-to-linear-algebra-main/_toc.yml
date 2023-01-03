@@ -1,0 +1,47 @@
+- file: intro
+- file: Jupyter_Introduction
+  sections:
+    - file: Python_Introduction
+    - file: Numpy_Introduction
+- file: Linear_Systems
+  sections:
+    - file: Gaussian_Elimination
+    - file: Matrix_Algebra
+    - file: Solving_Systems    
+    - file: Inverse_Matrices
+    - file: LU_Factorization
+    - file: Applications
+- file: Vector_Spaces
+  sections:
+    - file: General_Linear_Systems
+    - file: Linear_Combinations
+    - file: Linear_Independence
+    - file: Bases
+    - file: Vector_Space_Examples
+    - file: Applications_VS
+- file: Linear_Transformations
+  sections:
+    - file: Matrix_Representations
+    - file: Planar_Transformations
+    - file: Applications_LT
+- file: Inner_Products
+  sections:
+    - file: Orthogonalization
+    - file: QR_Factorization
+    - file: Orthogonal_Subspaces
+    - file: Least_Squares_Solutions    
+    - file: Projections
+    - file: Applications_IP
+- file: Eigenvalues
+  sections:
+    - file: Diagonalization
+    - file: Approximating_Eigenvalues
+    - file: Applications_EV
+- file: Solutions
+  sections:
+    - file: Introduction_Solutions
+    - file: Linear_Systems_Solutions
+    - file: Vector_Spaces_Solutions
+    - file: Linear_Transformations_Solutions
+    - file: Inner_Products_Solutions
+    - file: Eigenvalues_Solutions
