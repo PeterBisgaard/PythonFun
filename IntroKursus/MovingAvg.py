@@ -1,13 +1,19 @@
 import numpy as np
 
 # this is one dimensional array 
-import numpy as np 
-a = np.arange(24) 
-a.ndim  
+a = np.arange(50) 
+print('Dimention: ', a.ndim)
+print(a)
 
-# now reshape it 
-b = a.reshape(2,3,4) 
-print(b)
+startPos = 0
+endPos = 8
+previousTwo = np.zeros(2)
+
+actualBuffer = a.copy()
+
+print(previousTwo)
+
+
 # b is having three dimensions
 
 # y = np.array([0.8, 0.9, 0.7, 0.6, 0.3, 0.4])
