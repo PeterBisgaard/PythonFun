@@ -10,7 +10,7 @@ import numpy as np
 
 weight = np.array([1, 2, 3, 2, 1])
 y = np.array([0.8, 0.9, 0.7, 0.6, 0.3, 0.4])
-print(y)
+print("Data array:      ", y)
 
 ############################# Solution in "traditinal" programming (wihtout convolution) ###############################
 startPos = 0
@@ -19,21 +19,22 @@ tailing = np.zeros(2)
 result = np.zeros(y.size)
 
 actualBuffer = np.concatenate((tailing, y, tailing), axis=0)    # add tailing to the beginning and end of the data array due to task description
-print(actualBuffer)
+print("Tailed array:    ", actualBuffer)
 
 # Loop over the data array and calculate the moving average according to task description
 for i in range(startPos, endPos):
     result[i] = (actualBuffer[i]*weight[0] + actualBuffer[i+1]*weight[1] + actualBuffer[i+2]*weight[2] + actualBuffer[i+3]*weight[3] + actualBuffer[i+4]*weight[4]) / weight.sum()
 
-print("Traditionel: ", result)
+print("Traditionel:     ", result)
 
 
 
 ############################# Solution with convolution ###############################
 # Calculate running average of y with a array of weights
 result = np.convolve(y, weight, mode='same') / weight.sum() # se description below for mode parameter
-print("Convolution: ", result)
+print("Convolution:     ", result)
 
+# Larning resources🧐:
 # https://stackoverflow.com/questions/20036663/understanding-numpys-convolve
 # https://stackoverflow.com/questions/71309358/what-is-the-best-way-to-implement-1d-convolution-in-python
 # https://en.wikipedia.org/wiki/Convolution
