@@ -1,0 +1,6 @@
+aaaxx   123 A   xyz   456 BB 
+ zcbb   233 a   XYZ   xtz 1 
+cdddtr  a  111  tddw
+ zcbb   233 a   XYZ   xtz 1 
+        zcbb   233 a   XYZ   xtz 1 
+1zcbb   233 a   XYZ   xtz 1 
